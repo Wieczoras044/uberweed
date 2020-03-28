@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands
 from discord.ext.commands import Bot
@@ -33,5 +34,5 @@ async def ile(ctx, arg):
         await ctx.send('Podałeś nieprawidłową cene.')
 
 
-bot.run('Njg4Njk3NTk0Njk1Nzc4Mzcz.Xn5WjA.2MM780gqkaPZZYTrPgL1WuoGkRA')
+bot.run(os.environ['DISCORD_TOKEN'])
 
